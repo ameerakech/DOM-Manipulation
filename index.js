@@ -1,28 +1,31 @@
-// . Change document background color to silver
+//background color
 document.body.style.backgroundColor = 'silver';
-// 2. Changing the font color for h1 title tag to green
-document.getElementById('title').style.color = 'green';
 
-// 3. Changing the font to uppercase
+
+//homepage image
+const img = document.createElement('img')
+img.src =  'images/greenkiosk-img.jpg'
+img.style.width ='80vw'
+img.style.height = '85vh'
+img.style.padding = '20px'
+img.style.justifyContent ='center'
+img.style.paddingLeft = '5cm'
+const container = document.getElementById('container')
+container.appendChild(img)
+
+document.getElementById('title').style.color = 'green';
+document.getElementById('title').style.textAlign = 'center'
+document.getElementById('title').style.fontSize = '280%'
+
 const h3Elements = document.getElementsByTagName('h3');
 for (let h3 of h3Elements) {
     h3.style.textTransform = 'uppercase';
 }
 
-//Adding one fruit to the list of fruits
-const fruitList = document.getElementById('fruList');
-const newFruit = document.createElement('li');
-newFruit.textContent = 'Apples';
-fruitList.appendChild(newFruit);
+const clickButton = document.getElementById('click-button');
 
-const fruits = {
-    "Mangoes":"images/mangi.jpg",
-    "Bananas":"images/banana.jpg",
-    "Water Melons": "images/watermelon.jpg"
+clickButton.addEventListener('click',()=>{
+clickButton.textContent = 'Ordered!!'
+clickButton.style.backgroundColor = 'purple'
+})
 
-}
-
-const vegList = document.getElementById('vegList');
-const newVeg = document.createElement('li');
-newVeg.textContent = 'Carrots';
-vegList.appendChild(newVeg);
