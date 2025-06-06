@@ -4,28 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Kiosks</title>
+    <title>document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <h1 id="title">Welcome to Green Kiosks</h1>
-    <div id ="container"></div>
-    <p id="fruits-veggies">We sell fruits and vegetables</p>
-   
+    <h2 id="description">Fresh groceries delivered <br>Fast</h2>
+    <button id="shop-button">Shop Now</button>
+
+    <div id="container"></div>
+    <p id="fruitsveggies">We sell fruits and vegetables</p>
+
     <h3>Fruits</h3>
     <ul id="fruList">
-        <li>Mangoes</li>
-        <li>Bananas</li>
-        <li>Water Melons</li>
+        <div class="rating">
+            <li>Mangoes</li>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <button id="cart-button">Add to cart</button>
+        </div>
+
+
+        <div class="rating">
+            <li>Bananas</li>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <button id="cart-button">Add to cart</button>
+        </div>
+
+        <div class="rating">
+            <li>Water Melons</li>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <button id="cart-button">Add to cart</button>
+        </div>
+
+        <div class="rating">
+            <li>Apples</li>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <button id="cart-button">Add to cart</button>
+
+        </div>
     </ul>
+
     <h3>Vegetables</h3>
-    <ul>
-        <li>Onions</li>
-        <li>Tomatoes</li>
-        <li>Kales</li>
+    <ul id="vegList">
+        <div class="rating">
+            <li>Onions</li>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <button id="cart-button">Add to cart</button>
+
+        </div>
+
+        <div class="rating">
+            <li>Tomatoes</li>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <button id="cart-button">Add to cart</button>
+        </div>
+        <div class="rating">
+            <li>Kales</li>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <button id="cart-button">Add to cart</button>
+        </div>
+
+            <div class="rating">
+            <li>Eggplant</li>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <i class="fa-regular fa-star" id="star"></i>
+            <button id="cart-button">Add to cart</button>
+        </div>
+        
     </ul>
-     <button id="click-button">Place an order</button>
+
+
+
+    <!-- <button id="click-button">Place an order</button> -->
     <script src="index.js"></script>
 </body>
 
